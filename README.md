@@ -29,7 +29,7 @@ Follow these precise steps to get a local instance of the application compiled a
 ### 1. Clone the Repository
 
 git clone [https://github.com/Sonal-sp/Cine-AI.git] (https://github.com/Sonal-sp/Cine-AI.git)
-cd ai-movie-recommender
+cd Cine-AI
 
 ### 2. Configure the Virtual Environment (venv)
 Create and isolate your python execution environment dependencies.
