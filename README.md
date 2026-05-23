@@ -65,3 +65,6 @@ This application relies entirely on data pipelines provided by the live servers 
 This product uses the TMDB API but is not endorsed or certified by TMDB.
 
 For more information on the dataset rules or to register for your own unique credential tracking keys, explore The Movie Database API Documentation.
+
+### 👨‍💻 Author
+Developed as an engineering portfolio project. Feel free to connect or drop feedback!
