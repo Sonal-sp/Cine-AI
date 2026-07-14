@@ -13,7 +13,8 @@ An advanced, responsive data science web application that provides real-time mov
 
 ---
 ## Live Demo:
-    Check the live project here : https://cine-ai-5gtq7kducedualejubnk9i.streamlit.app/ 
+Check the live project here:
+    https://cine-ai-5gtq7kducedualejubnk9i.streamlit.app/ 
 
 ## 🛠️ Tech Stack & Architecture
 - **Language:** Python 3.10+
