@@ -1,73 +1,171 @@
-# CineAI: Intelligent Movie Discovery & Sentiment Hub 🎬
+# 🎬 CineAI – Intelligent Movie Discovery & Sentiment Hub
 
-An advanced, responsive data science web application that provides real-time movie recommendations, live multimedia trailer integration, and automated AI-powered NLP sentiment analysis on audience reviews. Powered by the live global database of The Movie Database (TMDB).
+CineAI is an AI-powered movie discovery platform that helps users explore films through personalized recommendations, trailer previews, and sentiment analysis of audience reviews. Built using Python and Streamlit, the application combines live movie data from **The Movie Database (TMDB)** with Natural Language Processing (NLP) to deliver a richer movie exploration experience.
 
----
-
-## 🚀 Key Features
-- **Live Vectorized Search:** Query any film in cinematic history instantly via direct integration with the global TMDB database.
-- **Contextual Recommendation Engine:** Leverages structural cloud-calculated metadata endpoints to serve highly relevant recommendations across thousands of titles.
-- **AI Sentiment Breakdown:** Utilizes Natural Language Processing (NLP) to calculate semantic polarity and analyze real-time user reviews.
-- **Interactive Multimedia Elements:** Embeds dynamic streaming video trailer anchors directly into an expandable user dashboard interface.
-- **State-Cached Watchlist:** Implements persistent session-state data arrays allowing real-time watchlist addition without page-refresh memory wipes.
-
----
-## Live Demo:
-Check the live project here:
-    https://cine-ai-5gtq7kducedualejubnk9i.streamlit.app/ 
-
-## 🛠️ Tech Stack & Architecture
-- **Language:** Python 3.10+
-- **Framework:** Streamlit (Dynamic Web Frontend Container)
-- **AI/NLP Engine:** TextBlob (Linguistic Polarity Scoring)
-- **API Integration:** TMDB REST API v3 Hooks (Requests)
-- **Environment Management:** Python-Dotenv / Os (Secure Credential Masking)
+Whether you're searching for your next favorite film or analyzing audience opinions, CineAI provides everything in one intuitive interface.
 
 ---
 
-## ⚙️ Installation & Local Setup
+## 🌐 Live Demo
 
-Follow these precise steps to get a local instance of the application compiled and running safely inside an isolated virtual sandbox.
+**Try it here:**
+https://cine-ai-5gtq7kducedualejubnk9i.streamlit.app/
 
-### 1. Clone the Repository
+---
 
-git clone [https://github.com/Sonal-sp/Cine-AI.git] (https://github.com/Sonal-sp/Cine-AI.git)
+## ✨ Features
+
+### 🔍 Smart Movie Search
+
+* Search from thousands of movies using the live TMDB database.
+* Instantly retrieve movie information, posters, ratings, and metadata.
+
+### 🎯 Personalized Recommendations
+
+* Receive relevant movie suggestions based on your selected title.
+* Powered by TMDB metadata and recommendation endpoints.
+
+### 🧠 AI Sentiment Analysis
+
+* Analyze audience reviews using Natural Language Processing.
+* Automatically classify review sentiment as positive, negative, or neutral.
+* Built using the TextBlob NLP library.
+
+### 🎥 Trailer Integration
+
+* Watch official movie trailers directly within the application.
+* Embedded multimedia experience without leaving the platform.
+
+### ❤️ Persistent Watchlist
+
+* Save movies to your watchlist during your session.
+* Session state management ensures your selections remain available without unnecessary page refreshes.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category               | Technologies  |
+| ---------------------- | ------------- |
+| Language               | Python 3      |
+| Framework              | Streamlit     |
+| NLP                    | TextBlob      |
+| API                    | TMDB REST API |
+| HTTP Requests          | Requests      |
+| Environment Management | python-dotenv |
+| Version Control        | Git & GitHub  |
+
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash id="vw2m1g"
+git clone https://github.com/Sonal-sp/Cine-AI.git
 cd Cine-AI
+```
 
-### 2. Configure the Virtual Environment (venv)
-Create and isolate your python execution environment dependencies.
+---
 
-# Create sandbox
+### Create a Virtual Environment
+
+**Windows**
+
+```bash id="g67l5o"
 python -m venv .venv
-
-# Activate environment (Windows)
 .venv\Scripts\activate
+```
 
-# Activate environment (macOS/Linux)
+**macOS / Linux**
+
+```bash id="ibib7k"
+python3 -m venv .venv
 source .venv/bin/activate
+```
 
-### 3. Install Package Dependencies
-With your environment active, execute a bulk extraction install from the verified requirements directory:
+---
 
+### Install Dependencies
+
+```bash id="9ajxry"
 pip install -r requirements.txt
+```
 
-### 4. Inject Environment Credentials (.env)
-Create a file named exactly .env in the root folder directory and input your personal developer authorization key:
+---
 
-Code snippet
-TMDB_API_KEY=your_alphanumeric_api_key_here
+### Configure Environment Variables
 
-### 5. Boot Up the Application
+Create a `.env` file in the project root.
 
+```env id="sd5zcd"
+TMDB_API_KEY=your_tmdb_api_key
+```
+
+---
+
+### Run the Application
+
+```bash id="fq6ppc"
 streamlit run app.py
+```
 
-# ⚖️ TMDB Data Attribution & Compliance
-This application relies entirely on data pipelines provided by the live servers of The Movie Database (TMDB).
+The application will launch locally in your browser.
 
-### Compliance Statement:
-This product uses the TMDB API but is not endorsed or certified by TMDB.
+---
 
-For more information on the dataset rules or to register for your own unique credential tracking keys, explore The Movie Database API Documentation.
+## 📊 How It Works
 
-### 👨‍💻 Author
-Developed as an engineering portfolio project. Feel free to connect or drop feedback!
+1. Search for any movie.
+2. The application fetches live movie details from the TMDB API.
+3. Audience reviews are processed using TextBlob to determine overall sentiment.
+4. Similar movie recommendations are generated using TMDB's recommendation endpoints.
+5. Users can watch trailers and maintain a temporary watchlist during their session.
+
+---
+
+## 🎯 Use Cases
+
+* Discover movies based on similar titles.
+* Understand audience opinions through AI-powered sentiment analysis.
+* Explore trailers before deciding what to watch.
+* Learn how NLP can be integrated into real-world applications.
+* Demonstrate API integration and data processing techniques.
+
+---
+
+## 🚧 Future Improvements
+
+Planned enhancements include:
+
+* User authentication
+* Permanent cloud-based watchlists
+* Genre-based recommendation engine
+* Advanced recommendation models using machine learning
+* Movie popularity trends and analytics
+* Personalized user profiles
+* Review summarization using Large Language Models (LLMs)
+* Dark mode support
+
+---
+
+## 📖 About the Project
+
+CineAI was built as a portfolio project to demonstrate the integration of AI, Natural Language Processing, and real-time APIs into an interactive web application. The project showcases how modern Python tools can be combined to create an engaging and practical movie discovery platform.
+
+---
+
+## ⚖️ TMDB Attribution
+
+This product uses the **TMDB API** but is **not endorsed or certified by TMDB**.
+
+Movie information, posters, ratings, trailers, and recommendations are provided by **The Movie Database (TMDB)**.
+
+---
+
+## 💬 Feedback
+
+Suggestions, feature requests, and contributions are always welcome. Feel free to open an issue or submit a pull request.
+
+---
+
